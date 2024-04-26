@@ -1,12 +1,20 @@
-/* Montserrat  */
+/* Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 .montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
+.alata-regular {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  /* SCROLL BAR */
 ::-webkit-scrollbar{
     width: 10px;
     background-color: #222222;    
@@ -20,7 +28,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "montserrat";
+    font-family: "Montserrat";
 }
 
 
@@ -38,7 +46,9 @@
     .navbar {
         background-color: #f6f6f6;
     }
-
+    .navbar-brand {
+        font-family: "Alata";
+    }
     .navbar-brand:hover {
         transform: scale(1.09);
         transition: 0.3s;
@@ -258,14 +268,37 @@
 
 }
 
+.boton-call2{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    
+}
 
-.card .img-item{
-    width: 100%;    
+
+.card-img{
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0;
+}
+
+.card1{
+    background-image: url(../img/producto_vajilla.jpg);
+}
+.card2 {
+    background-image: url(../img/producto_1.jpg);
+}
+.card3{
+    background-image: url(../img/producto_marco.jpg);
+}
+.card4{
+    background-image: url(../img/categoria_8.jpg);
 }
 
 .titulo-item h4{    
     padding: 5px 5px 5px 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
 }
 .precio-item {
@@ -279,12 +312,60 @@
 .redes a:hover{
     border: 2px solid #f6f6f6
 }
+
+.jumbotron {
+    background-image: url(../img/jumbotron.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.jumbotron h2{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.jumbotron span{
+    font-weight: 900;    
+    font-family: "Alata";
+}
 footer  {
     text-align: center;
     background-color: #333333;
     color:#f6f6f6;
     padding: 20px 20px 5px 20px;
 }
+.momo {
+    font-family: "Alata";
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0px;
+   
+}
+
+.logo-footer {
+    width: 55%;
+}
+
+footer ul{
+    list-style-type: none;        
+    text-align: left;
+    padding: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    text-align: left;
+    color: #f6f6f6;
+}
+
+footer h3 {    
+    margin-top: 20px;
+    font-weight: 600;   
+    text-align: left;
+}
+
 
     /* Media Queries */
 @media only screen and (min-width: 768px) {
@@ -301,9 +382,21 @@ footer  {
         .card {
             width: 22%;
         }
-        footer img{
-            width: 10%;
+        .card-img{
+            height: 250px;
         }
+        .jumbotron h2{
+            font-weight: bold;
+            font-size: 40px;
+            text-align: left;
+        }
+        .logo-footer {
+            width: 20%;
+        }
+
+        
+
+        
 
 }
 
