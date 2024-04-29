@@ -45,8 +45,13 @@
                   <li class="nav-item active">
                     <a class="nav-link" href="javascript:void(0)">Inicio</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Tienda</a>
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="./pages/tienda.html" role="button" data-bs-toggle="dropdown">Tienda</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./pages/tienda.html">Bazar</a></li>
+                      <li><a class="dropdown-item" href="./pages/tienda.html">Home & Deco</a></li>
+                      <li><a class="dropdown-item" href="./pages/tienda.html">Outdoor</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0)">Nosotros</a>
@@ -181,7 +186,7 @@
           </div>
     </section>
     <footer>
-      <div>
+      <div class="container">
         <div class="row">
           <div class="col-6 col-md-6 col-lg-6">
             <img src="./img/icon_logo.png" class="logo-footer">
@@ -206,10 +211,13 @@
               <li><a href="#">Sucursales</a></li>
             </ul>
           </div>
+          <div class="col-12">
+            <p class="copy">Diseñado por Lucas Bragagnolo</p>
+          </div>
         </div>
       </div>
 
-        <p class="copy"><small>Diseñado por Lucas Bragagnolo</small></p>
+        
     </footer>
     <!-- Script BS 5.3.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
