@@ -31,7 +31,10 @@
     font-family: "Montserrat";
 }
 .mt-50 {
-    margin-top: 100px;
+    margin-top: 50px;
+}
+.mt-120 {
+    margin-top: 120px;
 }
 .ml-40 {
     margin-left: 40px;
@@ -92,7 +95,8 @@
     }
 
     .navbar-collapse .active{
-        font-weight: bold;
+        font-weight: 800;
+        
     }
 
     .navbar-collapse a:hover{
@@ -130,20 +134,46 @@
     .img1 {
         background-image: url(../img/slider_1.jpg);
         background-position: center;
-        height: 80vh;
+        height: 90vh;
         background-size: cover;
     }
     .img2 {
         background-image: url(../img/slider_2.jpg);
         background-position: center;
-        height: 80vh;
+        height: 90vh;
         background-size: cover;
     }
     .img3 {
         background-image: url(../img/slider_3.jpg);
         background-position: center;
-        height: 80vh;
+        height: 90vh;
         background-size: cover;
+    }
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        width: 50%;
+        text-align: left;
+    }
+    .carousel-caption h3 {
+        text-align: left;
+        font-size: 50px;
+        font-family: "Alata", sans-serif;
+        font-weight: 400;
+        font-style: normal;    
+        background-color: rgba(0, 0, 0, 0.0);   
+    }
+    .carousel-caption p{
+        text-align: left;
+
+    }
+
+    .carousel-caption a {
+        background-color: #f6f6f6;
+        color: #222222;
+        padding: 10px;
+        text-align: left;
+        text-decoration: none;
     }
 
     .categorias {
@@ -258,7 +288,10 @@
     justify-content: space-evenly;        
     padding: 0px 10px;
 }
-
+ .lista-productos a {
+    color: #222222;
+    text-decoration: none;
+ }
 
 .card{    
     height: auto; 
@@ -308,6 +341,35 @@
 }
 .card4{
     background-image: url(../img/categoria_8.jpg);
+}
+.card5{
+    background-image: url(../img/humificador_2.jpg);
+}
+.card6 {
+    background-image: url(../img/alocacia.jpg);
+}
+.card7{
+    background-image: url(../img/potus.jpg);
+}
+.card8{
+    background-image: url(../img/sillon_exterior.jpg);
+    background-position: bottom;
+}
+.card9{
+    background-image: url(../img/sofa_living.jpg);
+    background-position: bottom;
+}
+.card10 {
+    background-image: url(../img/velador.jpg);
+    background-position: left;
+}
+.card11{
+    background-image: url(../img/juego_almoadones.jpg);
+    background-position: top;
+}
+.card12{
+    background-image: url(../img/mesa_cama.jpg);
+    background-position: left;
 }
 
 .titulo-item h4{    
@@ -386,7 +448,8 @@ footer h3 {
 .copy{
     background-color: #f6f6f6;
     color:#222222;
-    border-radius: 40%;
+    text-align: center;
+    padding: 15px;
 }
 
 
@@ -403,7 +466,7 @@ footer h3 {
 }
 .filtro-rubro {
     margin-bottom: 10px;
-    background-color: #f6f6f6;
+    
 }
 .filtro-rubro a {
     text-decoration: none;
@@ -474,6 +537,59 @@ footer h3 {
         justify-content: space-between;
     }
 
+
+/* Sucursales */
+
+.sucursal {
+    padding: 40px;
+    margin: 20px;
+    background-color: #f6f6f6;
+    color: #222222;
+    border: 2px solid #222222;    
+}
+.sucursal h3 {
+    font-size: 20px;
+}
+
+.img-sucursal {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/frente.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Carrito */
+.producto-carrito {
+    display: flex;
+}
+.producto-carrito h4 {
+    font-size: 20px;
+}
+
+.producto-carrito .producto-carrito-detalle{
+    padding: 10px;
+}
+.producto-carrito .form-select {
+    margin-bottom: 10px;
+    width: 30%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+.producto-carrito-img{
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0;
+}
+
+.producto-carrito1{
+    background-image: url(../img/producto_vajilla.jpg);
+}
     /* Media Queries */
 @media only screen and (min-width: 768px) {
         .categorias {
@@ -488,6 +604,9 @@ footer h3 {
         }
         .card {
             width: 30%;
+        }
+        .card-prod-relacionado {
+            width: 22%;
         }
         .card-img{
             height: 250px;
